@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, user-scalable=yes">
+    <title>Kategori Produk - Trisna Monel</title>
+    <meta name="description" content="Jelajahi koleksi lengkap produk Trisna Monel berdasarkan kategori.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html#home" class="logo">
+                    <img src="images/logo.png" alt="Trisna Monel">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html#home" class="nav-link">Beranda</a>
+                    <a href="index.html#about" class="nav-link">Tentang Kami</a>
+                    <a href="index.html#products" class="nav-link active">Produk</a>
+                    <a href="index.html#partnership" class="nav-link">Partnership</a>
+                    <a href="index.html#contact" class="nav-link">Kontak</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="https://wa.me/6289524907552" target="_blank" class="cta-button-nav">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section-subtitle">Koleksi Lengkap</span>
+                <h1 class="section-title" id="pageTitle">Kategori <span class="gradient-text">Produk</span></h1>
+                <p class="section-description" id="pageDescription">
+                    Temukan berbagai pilihan produk berkualitas tinggi untuk melengkapi gaya Anda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="category-products">
+        <div class="container">
+
+
+            <div class="products-grid" id="categoryProductGrid">
+                <!-- Products will be injected here via JS -->
+            </div>
+
+            <!-- Single Order Button for Custom Bros - Below Grid -->
+            <div id="customOrderButton"
+                style="text-align: center; margin-top: 40px; margin-bottom: 30px; display: none;">
+                <a href="https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20membuat%20bros%20custom.%20Mohon%20infonya."
+                    target="_blank" class="cta-button primary"
+                    style="padding: 14px 50px; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 12px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Pesan Bros Custom via WhatsApp
+                </a>
+                <p style="margin-top: 12px; color: var(--color-gray-dark); font-size: 0.9rem;">
+                    💡 Klik gambar di atas untuk download referensi desain
+                </p>
+            </div>
+
+            <div id="noProductsMessage" style="display: none; text-align: center; padding: 50px;">
+                <h3>Belum ada produk untuk kategori ini.</h3>
+                <a href="index.html" class="cta-button primary" style="margin-top: 20px;">Kembali ke Beranda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #C6A87C 0%, #F0E6D2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; letter-spacing: 1px;">
+                        Trisna Monel
+                    </h3>
+                    <p>Aksesoris wanita premium dengan desain elegan dan kualitas terbaik untuk mitra bisnis Anda.</p>
+                    <div class="social-links footer-social">
+                        <a href="https://www.instagram.com/trisna_monel?igsh=eXBiMmdxc2F3djNo" class="social-link"
+                            aria-label="Instagram" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor"
+                                    stroke-width="2" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                                <circle cx="18" cy="6" r="1" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/6289524907552" class="social-link" aria-label="WhatsApp" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M17.472 14.382C17.015 14.153 14.98 13.146 14.571 13.005C14.162 12.863 13.862 12.793 13.562 13.25C13.262 13.707 12.486 14.655 12.226 14.955C11.966 15.255 11.706 15.285 11.249 15.056C10.792 14.827 9.38 14.363 7.713 12.878C6.41 11.717 5.54 10.282 5.28 9.825C5.02 9.368 5.251 9.127 5.48 8.898C5.689 8.689 5.937 8.361 6.166 8.101C6.395 7.841 6.465 7.641 6.607 7.341C6.749 7.041 6.678 6.781 6.563 6.552C6.448 6.323 5.54 4.288 5.161 3.374C4.782 2.46 4.403 2.58 4.133 2.58C3.863 2.58 3.563 2.55 3.263 2.55C2.963 2.55 2.476 2.665 2.067 3.122C1.658 3.579 0.59 4.586 0.59 6.621C0.59 8.656 2.097 10.631 2.326 10.931C2.555 11.231 5.54 15.766 10.073 17.532C14.606 19.298 14.606 18.655 15.483 18.565C16.36 18.475 18.065 17.562 18.444 16.619C18.823 15.676 18.823 14.883 18.708 14.713C18.593 14.543 18.293 14.428 17.836 14.199L17.472 14.382Z"
+                                    stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/1DQHyv8ZXH/" class="social-link" aria-label="Facebook"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@trisna_monel?" class="social-link" aria-label="TikTok"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                            </svg>
+                        </a>
+                        <a href="https://shopee.co.id/jafapresti?" class="social-link" aria-label="Shopee"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                                <path d="M3 6h18"></path>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Perusahaan</h4>
+                        <a href="index.html#about">Tentang Kami</a>
+                        <a href="index.html#products">Produk</a>
+                        <a href="index.html#partnership">Partnership</a>
+                        <a href="index.html#contact">Kontak</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Produk</h4>
+                        <a href="category.html?category=gelang">Gelang</a>
+                        <a href="category.html?category=kalung">Kalung</a>
+                        <a href="category.html?category=cincin">Cincin</a>
+                        <a href="category.html?category=bros">Bros</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Bantuan</h4>
+                        <a href="#">FAQ</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Panduan Mitra</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Trisna Monel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // EMERGENCY INLINE RENDERER
+        // This ensures products appear even if script.js fails or is cached
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const cat = urlParams.get('category');
+            const grid = document.getElementById('categoryProductGrid');
+
+            // Only run if grid exists and is empty (script.js didn't render)
+            // OR if it's specifically the 'bros' category which has been problematic
+            if (grid && (grid.children.length === 0 || cat === 'bros')) {
+                console.log('Force rendering category:', cat);
+
+                // Define data locally
+                const localBrosData = [
+                    { id: 'bros-1', name: 'Bros Floral Elegance', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/bros/1.jpeg' },
+                    { id: 'bros-2', name: 'Bros Royal Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Kristal', image: 'images/bros/2.jpeg' },
+                    { id: 'bros-3', name: 'Bros Classic Sunflower', category: 'bros', price: 'Hubungi Admin', material: 'Monel Premium', image: 'images/bros/3.jpeg' },
+                    { id: 'bros-4', name: 'Bros Golden Leaf', category: 'bros', price: 'Hubungi Admin', material: 'Monel Gold Plated', image: 'images/bros/4.jpeg' },
+                    { id: 'bros-5', name: 'Bros Twin Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/5.jpeg' },
+                    { id: 'bros-6', name: 'Bros Ribbon Charm', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/6.jpeg' },
+                    { id: 'bros-7', name: 'Bros Etnik Heritage', category: 'bros', price: 'Hubungi Admin', material: 'Monel Ukir Jepara', image: 'images/bros/7.jpeg' },
+                    { id: 'bros-8', name: 'Bros Minimalist Pearl', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Mutiara', image: 'images/bros/8.jpeg' },
+                    { id: 'bros-9', name: 'Bros Abstract Art', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/9.jpeg' },
+                    { id: 'bros-10', name: 'Bros Vintage Star', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/10.jpeg' },
+                    { id: 'bros-11', name: 'Bros Luxury Curve', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Polish', image: 'images/bros/11.jpeg' },
+                    { id: 'bros-12', name: 'Bros Modern Geometry', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/12.jpeg' }
+                ];
+
+                if (cat === 'bros') {
+                    // Update Title manually to be sure
+                    const pageTitle = document.getElementById('pageTitle');
+                    if (pageTitle) pageTitle.innerHTML = `Koleksi <span class="gradient-text">Bros</span>`;
+
+                    const pageDesc = document.getElementById('pageDescription');
+                    if (pageDesc) {
+                        pageDesc.textContent = "Bros premium dari bahan monel & titanium yang anti karat, kuat, dan tampil mewah. Cocok untuk hijab, seragam, event, dan souvenir. Bisa custom nama, logo, atau desain sendiri sesuai kebutuhanmu.";
+                        pageDesc.style.maxWidth = "800px";
+                        pageDesc.style.marginLeft = "auto";
+                        pageDesc.style.marginRight = "auto";
+                    }
+
+                    const noMsg = document.getElementById('noProductsMessage');
+                    if (noMsg) noMsg.style.display = 'none';
+
+                    // Show the single custom order button
+                    const orderBtn = document.getElementById('customOrderButton');
+                    if (orderBtn) orderBtn.style.display = 'block';
+
+                    // Add "Back to Home" button
+                    const container = grid.parentElement;
+                    const existingBackBtn = document.getElementById('brosBackBtn');
+                    if (!existingBackBtn) {
+                        const backBtn = document.createElement('div');
+                        backBtn.id = 'brosBackBtn';
+                        backBtn.style.marginBottom = '20px';
+                        backBtn.style.textAlign = 'left';
+                        backBtn.innerHTML = `<a href="index.html#products" class="back-link" style="display:inline-block; font-size:1rem; margin-bottom:0;">
+                            ← Kembali ke Katalog
+                        </a>`;
+                        container.insertBefore(backBtn, orderBtn || grid);
+                    }
+
+                    // Clear and Render
+                    grid.innerHTML = '';
+
+                    localBrosData.forEach((item, index) => {
+                        const card = document.createElement('div');
+                        card.className = 'product-card';
+                        card.style.opacity = '0';
+                        card.style.animation = `fadeUp 0.5s ease forwards ${index * 0.1}s`;
+
+                        // Card with downloadable image, no order button
+                        card.innerHTML = `
+                            <a href="${item.image}" download="bros-${item.id}.jpeg" style="display: block; text-decoration: none; cursor: pointer;">
+                                <div class="product-image" style="height: 350px; position: relative;">
+                                    <img src="${item.image}" alt="${item.name}" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='images/hero-bg.jpg'">
+                                    <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 8px 12px; border-radius: 20px; font-size: 0.75rem; display: flex; align-items: center; gap: 5px;">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                            <polyline points="7 10 12 15 17 10"/>
+                                            <line x1="12" y1="15" x2="12" y2="3"/>
+                                        </svg>
+                                        Download
+                                    </div>
+                                </div>
+                            </a>
+                        `;
+                        grid.appendChild(card);
+                    });
+
+                    // Add keyframes for the inline animation
+                    const style = document.createElement('style');
+                    style.innerHTML = `
+                        @keyframes fadeUp {
+                            from { opacity: 0; transform: translateY(20px); }
+                            to { opacity: 1; transform: translateY(0); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+            }
+        });
+    </script>
+
+</html>
