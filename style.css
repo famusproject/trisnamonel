@@ -1637,6 +1637,11 @@ section {
         margin-bottom: var(--spacing-md);
     }
 
+    .hero-title .gradient-text {
+        display: block;
+        margin-top: 0.2rem;
+    }
+
     .hero-subtitle {
         font-size: 0.8rem;
         padding-left: 0 !important;
@@ -1692,6 +1697,18 @@ section {
     .floating-card {
         padding: var(--spacing-xs) var(--spacing-sm);
         font-size: 0.8rem;
+    }
+
+    .map-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .map-link {
+        width: 100%;
+        justify-content: center;
     }
 
     .section-title {
