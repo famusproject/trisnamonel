@@ -1638,13 +1638,14 @@ section {
 
     .hero-subtitle {
         font-size: 0.8rem;
-        padding-left: 0;
+        padding-left: 0 !important;
         letter-spacing: 0.2em;
         margin-bottom: var(--spacing-sm);
+        text-align: center;
     }
 
     .hero-subtitle::before {
-        display: none;
+        display: none !important;
     }
 
     .hero-buttons {
