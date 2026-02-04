@@ -1095,30 +1095,185 @@ section {
     /* Equal width */
     gap: var(--spacing-xl);
     /* Reduced gap */
-    align-items: start;
+    align-items: stretch;
     /* Align tops */
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    height: 100%;
 }
 
-.info-card {
+.contact-details-card {
     background: var(--color-white);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(198, 168, 124, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header-small h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-black);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+}
+
+.contact-header-small h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+.contact-detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    flex: 1;
+    justify-content: center;
+}
+
+.contact-detail-item {
     display: flex;
     gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.detail-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--color-cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
     box-shadow: var(--shadow-sm);
+}
+
+.detail-text h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: var(--color-black);
+}
+
+.detail-text p {
+    color: var(--color-gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.divider {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin: 5px 0;
+}
+
+.contact-details-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-gold);
+}
+
+/* Map styled as a card */
+.contact-map-wrapper {
+    background: var(--color-white);
+    padding: 0;
+    /* Remove padding for full map */
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(198, 168, 124, 0.2);
+    height: 100%;
+    overflow: hidden;
+    /* Ensure map stays within border radius */
+    display: flex;
+    flex-direction: column;
+}
+
+.map-header {
+    padding: var(--spacing-lg) var(--spacing-lg) 10px;
+    background: var(--color-white);
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-gold);
     transition: var(--transition-base);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    background: var(--color-cream);
     border: 1px solid rgba(198, 168, 124, 0.3);
 }
 
-.info-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateX(5px);
+.map-link:hover {
+    background: var(--gradient-gold);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    border-color: transparent;
+}
+
+.map-link svg {
+    transition: transform 0.3s ease;
+}
+
+.map-link:hover svg {
+    transform: translate(2px, -2px);
+}
+
+.map-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-black);
+    position: relative;
+    padding-bottom: 5px;
+    /* Minimal padding */
+    margin: 0;
+}
+
+.map-header h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--color-gold);
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-lg);
+    /* Rounded corners for the map */
+}
+
+.contact-map {
+    margin-top: 0;
+    overflow: hidden;
+    flex: 1;
+    width: 100%;
+    /* Add padding to create the 'tepi' (edge) inside the card */
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
 }
 
 .info-icon {
@@ -1172,9 +1327,9 @@ section {
 }
 
 .contact-form-wrapper {
+    grid-column: 1 / -1;
     background: var(--color-white);
     padding: var(--spacing-xl);
-    /* Reduced padding */
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
 }
@@ -1372,6 +1527,8 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-description {
@@ -1400,7 +1557,7 @@ section {
     }
 
     .container {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--spacing-sm);
     }
 
     .navbar {
@@ -1473,17 +1630,21 @@ section {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 1.2;
+        width: 100%;
+        text-align: center;
     }
 
     .hero-subtitle {
         font-size: 0.8rem;
-        padding-left: 50px;
+        padding-left: 0;
         letter-spacing: 0.2em;
+        margin-bottom: var(--spacing-sm);
     }
 
     .hero-subtitle::before {
-        width: 35px;
+        display: none;
     }
 
     .hero-buttons {
@@ -1569,7 +1730,11 @@ section {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.85rem;
+    }
+
+    .hero-title br {
+        display: none;
     }
 
     .section-title {
@@ -2059,34 +2224,9 @@ section {
 }
 
 /* Contact Map Styles */
-.contact-map {
-    margin-top: var(--spacing-3xl);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: var(--color-white);
-    padding: var(--spacing-xs);
-}
 
-.contact-map iframe {
-    display: block;
-    border-radius: var(--radius-md);
-    filter: grayscale(0.2);
-    transition: var(--transition-base);
-}
 
-.contact-map:hover iframe {
-    filter: grayscale(0);
-}
 
-/* Updated Contact Map Styles */
-.contact-map.small-map {
-    margin-top: var(--spacing-lg);
-    /* Reduced margin */
-    height: 250px;
-    /* Force height constraint */
-}
 
 /* Ensure contact-info takes full width on its side */
 .contact-info {

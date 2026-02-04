@@ -180,12 +180,26 @@
             const cat = urlParams.get('category');
             const grid = document.getElementById('categoryProductGrid');
 
-            // Force render for 'bros' AND 'label'
-            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label')) {
+            // Force render for 'bros', 'label', 'souvenir', AND 'gelang'
+            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label' || cat === 'souvenir' || cat === 'gelang')) {
                 console.log('Force rendering category:', cat);
 
                 // Define data locally
                 const localData = {
+                    'gelang': [
+                        { id: 'gelang-1', name: 'Gelang Monel Elegant 01', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/1.jpeg' },
+                        { id: 'gelang-2', name: 'Gelang Monel Elegant 02', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/2.jpeg' },
+                        { id: 'gelang-3', name: 'Gelang Monel Elegant 03', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/3.jpeg' },
+                        { id: 'gelang-4', name: 'Gelang Monel Elegant 04', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/4.jpeg' },
+                        { id: 'gelang-5', name: 'Gelang Monel Elegant 05', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/5.jpeg' },
+                        { id: 'gelang-6', name: 'Gelang Monel Elegant 06', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/6.jpeg' },
+                        { id: 'gelang-7', name: 'Gelang Monel Elegant 07', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/7.jpeg' },
+                        { id: 'gelang-8', name: 'Gelang Monel Elegant 08', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/8.jpeg' },
+                        { id: 'gelang-9', name: 'Gelang Monel Elegant 09', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/9.jpeg' },
+                        { id: 'gelang-10', name: 'Gelang Monel Elegant 10', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/10.jpeg' },
+                        { id: 'gelang-11', name: 'Gelang Monel Elegant 11', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/11.jpeg' },
+                        { id: 'gelang-12', name: 'Gelang Monel Elegant 12', category: 'gelang', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gelang/12.jpeg' }
+                    ],
                     'bros': [
                         { id: 'bros-1', name: 'Bros Floral Elegance', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/bros/1.jpeg' },
                         { id: 'bros-2', name: 'Bros Royal Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Kristal', image: 'images/bros/2.jpeg' },
@@ -209,7 +223,23 @@
                         { id: 'label-6', name: 'Label Brand Custom 06', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/6.jpeg' },
                         { id: 'label-7', name: 'Label Brand Custom 07', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/7.jpeg' },
                         { id: 'label-8', name: 'Label Brand Custom 08', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/8.jpeg' },
-                        { id: 'label-9', name: 'Label Brand Custom 09', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/9.jpeg' }
+                        { id: 'label-9', name: 'Label Brand Custom 09', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/9.jpeg' },
+                        { id: 'label-10', name: 'Label Brand Custom 10', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/10.jpeg' },
+                        { id: 'label-11', name: 'Label Brand Custom 11', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/11.jpeg' },
+                        { id: 'label-12', name: 'Label Brand Custom 12', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/12.jpeg' }
+                    ],
+                    'souvenir': [
+                        { id: 'souvenir-1', name: 'Souvenir Monel Premium 01', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/1.jpeg' },
+                        { id: 'souvenir-2', name: 'Souvenir Monel Premium 02', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/2.jpeg' },
+                        { id: 'souvenir-3', name: 'Souvenir Monel Premium 03', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/3.jpeg' },
+                        { id: 'souvenir-4', name: 'Souvenir Monel Premium 04', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/4.jpeg' },
+                        { id: 'souvenir-5', name: 'Souvenir Monel Premium 05', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/5.jpeg' },
+                        { id: 'souvenir-7', name: 'Souvenir Monel Premium 07', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/7.jpeg' },
+                        { id: 'souvenir-8', name: 'Souvenir Monel Premium 08', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/8.jpeg' },
+                        { id: 'souvenir-9', name: 'Souvenir Monel Premium 09', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/9.jpeg' },
+                        { id: 'souvenir-10', name: 'Souvenir Monel Premium 10', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/10.jpeg' },
+                        { id: 'souvenir-11', name: 'Souvenir Monel Premium 11', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/11.jpeg' },
+                        { id: 'souvenir-12', name: 'Souvenir Monel Premium 12', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/12.jpeg' }
                     ]
                 };
 
@@ -219,7 +249,12 @@
                     // Update Title manually
                     const pageTitle = document.getElementById('pageTitle');
                     if (pageTitle) {
-                        const titleText = cat === 'bros' ? 'Bros' : 'Label Brand';
+                        let titleText = '';
+                        if (cat === 'bros') titleText = 'Bros';
+                        else if (cat === 'label') titleText = 'Label Brand';
+                        else if (cat === 'souvenir') titleText = 'Souvenir & Gift';
+                        else if (cat === 'gelang') titleText = 'Gelang';
+
                         pageTitle.innerHTML = `Koleksi <span class="gradient-text">${titleText}</span>`;
                     }
 
@@ -227,8 +262,12 @@
                     if (pageDesc) {
                         if (cat === 'bros') {
                             pageDesc.textContent = "Bros premium dari bahan monel & titanium yang anti karat, kuat, dan tampil mewah. Cocok untuk hijab, seragam, event, dan souvenir. Bisa custom nama, logo, atau desain sendiri sesuai kebutuhanmu.";
-                        } else {
-                            pageDesc.textContent = "Label brand eksklusif berbahan monel berkualitas tinggi. Tahan karat, awet, dan memberikan kesan premium pada produk fashion, hijab, dan aksesoris brand Anda. Terima pesanan custom dengan berbagai ukuran.";
+                        } else if (cat === 'label') {
+                            pageDesc.textContent = "Label brand eksklusif berbahan monel & titanium berkualitas tinggi. Tahan karat, awet, dan memberikan kesan premium pada produk fashion, hijab, dan aksesoris brand Anda. Terima pesanan custom dengan berbagai ukuran.";
+                        } else if (cat === 'souvenir') {
+                            pageDesc.textContent = "Koleksi souvenir dan gift monel & titanium premium untuk berbagai keperluan seperti pernikahan, seminar, instansi, maupun hadiah personal. Produk eksklusif, tahan lama, dan anti karat.";
+                        } else if (cat === 'gelang') {
+                            pageDesc.textContent = "Koleksi gelang monel & titanium premium dengan desain elegan dan modern. Terbuat dari bahan monel berkualitas tinggi yang anti karat, berkilau, dan nyaman digunakan untuk aktivitas sehari-hari.";
                         }
                         pageDesc.style.maxWidth = "800px";
                         pageDesc.style.marginLeft = "auto";
@@ -244,9 +283,17 @@
                         orderBtn.style.display = 'block';
                         // Update button text/link based on category
                         const btnText = orderBtn.querySelector('a');
-                        if (btnText && cat === 'label') {
-                            btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20membuat%20Label%20Brand%20custom.%20Mohon%20infonya.";
-                            btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Label Brand');
+                        if (btnText) {
+                            if (cat === 'label') {
+                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20membuat%20Label%20Brand%20custom.%20Mohon%20infonya.";
+                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Label Brand');
+                            } else if (cat === 'souvenir') {
+                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20Souvenir%20%26%20Gift%20custom.%20Mohon%20infonya.";
+                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Souvenir & Gift');
+                            } else if (cat === 'gelang') {
+                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20Gelang%20custom.%20Mohon%20infonya.";
+                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Gelang');
+                            }
                         }
                     }
 

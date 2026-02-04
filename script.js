@@ -565,23 +565,123 @@ document.addEventListener('DOMContentLoaded', function () {
         // Gelang
         {
             id: 'gelang-1',
-            name: 'Gelang Premium',
+            name: 'Gelang Monel Elegant 01',
             category: 'gelang',
-            price: 'Rp 65.000',
-            material: 'Stainless Steel',
-            description: 'Koleksi gelang dengan desain elemen minimalis namun elegan. Terbuat dari bahan Stainless Steel berkualitas tinggi yang anti karat dan tahan lama. Cocok untuk penggunaan sehari-hari maupun acara formal.',
-            image: 'images/hero-bg.jpg', // Placeholder
-            specs: { available: 'Ready Stock', weight: '15 gr' }
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gelang monel premium dengan desain elegan dan kilau yang tahan lama. Anti karat dan aman untuk kulit.',
+            image: 'images/gelang/1.jpeg',
+            specs: { available: 'Ready Stock', weight: '12 gr' }
         },
         {
             id: 'gelang-2',
-            name: 'Gelang Minimalis',
+            name: 'Gelang Monel Elegant 02',
             category: 'gelang',
-            price: 'Rp 45.000',
-            material: 'Titanium',
-            description: 'Gelang desain minimalis yang ringan dan nyaman dipakai. Material Titanium yang kuat dan tidak menyebabkan iritasi pada kulit sensitif.',
-            image: 'images/hero-bg.jpg', // Placeholder
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Desain minimalis modern yang cocok untuk melengkapi penampilan sehari-hari Anda.',
+            image: 'images/gelang/2.jpeg',
             specs: { available: 'Ready Stock', weight: '10 gr' }
+        },
+        {
+            id: 'gelang-3',
+            name: 'Gelang Monel Elegant 03',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gelang monel dengan detail pengerjaan yang halus dan mewah.',
+            image: 'images/gelang/3.jpeg',
+            specs: { available: 'Ready Stock', weight: '15 gr' }
+        },
+        {
+            id: 'gelang-4',
+            name: 'Gelang Monel Elegant 04',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Koleksi gelang eksklusif untuk kesan yang lebih profesional dan anggun.',
+            image: 'images/gelang/4.jpeg',
+            specs: { available: 'Ready Stock', weight: '11 gr' }
+        },
+        {
+            id: 'gelang-5',
+            name: 'Gelang Monel Elegant 05',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gelang monel berkualitas tinggi dengan daya tahan maksimal.',
+            image: 'images/gelang/5.jpeg',
+            specs: { available: 'Ready Stock', weight: '14 gr' }
+        },
+        {
+            id: 'gelang-6',
+            name: 'Gelang Monel Elegant 06',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Tampil menawan dengan perhiasan monel yang dirancang khusus.',
+            image: 'images/gelang/6.jpeg',
+            specs: { available: 'Ready Stock', weight: '13 gr' }
+        },
+        {
+            id: 'gelang-7',
+            name: 'Gelang Monel Elegant 07',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gelang dengan finishing high-polish untuk kilap yang memukau.',
+            image: 'images/gelang/7.jpeg',
+            specs: { available: 'Ready Stock', weight: '12 gr' }
+        },
+        {
+            id: 'gelang-8',
+            name: 'Gelang Monel Elegant 08',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Pilihan hadiah sempurna untuk orang terkasih atau koleksi pribadi.',
+            image: 'images/gelang/8.jpeg',
+            specs: { available: 'Ready Stock', weight: '11 gr' }
+        },
+        {
+            id: 'gelang-9',
+            name: 'Gelang Monel Elegant 09',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Desain timeless yang tidak pernah ketinggalan zaman.',
+            image: 'images/gelang/9.jpeg',
+            specs: { available: 'Ready Stock', weight: '16 gr' }
+        },
+        {
+            id: 'gelang-10',
+            name: 'Gelang Monel Elegant 10',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Kualitas material monel asli yang tahan terhadap korosi.',
+            image: 'images/gelang/10.jpeg',
+            specs: { available: 'Ready Stock', weight: '13 gr' }
+        },
+        {
+            id: 'gelang-11',
+            name: 'Gelang Monel Elegant 11',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Detail artistik yang membedakan produk kami dari yang lain.',
+            image: 'images/gelang/11.jpeg',
+            specs: { available: 'Ready Stock', weight: '14 gr' }
+        },
+        {
+            id: 'gelang-12',
+            name: 'Gelang Monel Elegant 12',
+            category: 'gelang',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gelang monel premium untuk melengkapi gaya berkelas Anda.',
+            image: 'images/gelang/12.jpeg',
+            specs: { available: 'Ready Stock', weight: '15 gr' }
         },
 
         // Kalung
@@ -819,6 +919,148 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Solusi branding eksklusif untuk UMKM maupun brand besar. Kualitas material terjamin standar ekspor.',
             image: 'images/label_brand/9.jpeg',
             specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-10',
+            name: 'Label Brand Custom 10',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Custom label brand premium untuk identitas produk yang kuat dan berkelas.',
+            image: 'images/label_brand/10.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-11',
+            name: 'Label Brand Custom 11',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Label monel kualitas tinggi dengan finishing presisi untuk brand fashion Anda.',
+            image: 'images/label_brand/11.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-12',
+            name: 'Label Brand Custom 12',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Solusi label brand custom anti karat dan tahan lama untuk kesan produk yang mewah.',
+            image: 'images/label_brand/12.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+
+        // Souvenir & Gift
+        {
+            id: 'souvenir-1',
+            name: 'Souvenir Monel Premium 01',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Souvenir eksklusif berbahan monel yang awet dan mewah. Cocok untuk hadiah pernikahan, seminar, atau event perusahaan.',
+            image: 'images/gift/1.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-2',
+            name: 'Souvenir Monel Premium 02',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Produk gift monel dengan desain elegan dan finishing halus.',
+            image: 'images/gift/2.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-3',
+            name: 'Souvenir Monel Premium 03',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Pilihan hadiah spesial yang berkesan dan tahan lama.',
+            image: 'images/gift/3.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-4',
+            name: 'Souvenir Monel Premium 04',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Souvenir custom dengan kualitas pengerjaan terbaik.',
+            image: 'images/gift/4.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-5',
+            name: 'Souvenir Monel Premium 05',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gift eksklusif untuk momen spesial Anda.',
+            image: 'images/gift/5.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-7',
+            name: 'Souvenir Monel Premium 07',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Souvenir monel dengan detail desain yang cantik.',
+            image: 'images/gift/7.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-8',
+            name: 'Souvenir Monel Premium 08',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Hadiah premium yang menonjolkan kualitas material monel.',
+            image: 'images/gift/8.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-9',
+            name: 'Souvenir Monel Premium 09',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Produk gift dengan tampilan mewah dan anti karat.',
+            image: 'images/gift/9.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-10',
+            name: 'Souvenir Monel Premium 10',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Pilihan souvenir terbaik untuk meningkatkan citra brand atau acara Anda.',
+            image: 'images/gift/10.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-11',
+            name: 'Souvenir Monel Premium 11',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Gift monel berkualitas tinggi, tahan lama dan elegan.',
+            image: 'images/gift/11.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
+        },
+        {
+            id: 'souvenir-12',
+            name: 'Souvenir Monel Premium 12',
+            category: 'souvenir',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Souvenir custom monel untuk berbagai kebutuhan acara.',
+            image: 'images/gift/12.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
         },
 
         // Hijab
