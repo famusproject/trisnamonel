@@ -152,6 +152,8 @@
                         <a href="category.html?category=kalung">Kalung</a>
                         <a href="category.html?category=cincin">Cincin</a>
                         <a href="category.html?category=bros">Bros</a>
+                        <a href="category.html?category=souvenir">Souvenir & Gift</a>
+                        <a href="category.html?category=label">Label Brand</a>
                     </div>
                     <div class="footer-column">
                         <h4>Bantuan</h4>
@@ -178,35 +180,56 @@
             const cat = urlParams.get('category');
             const grid = document.getElementById('categoryProductGrid');
 
-            // Only run if grid exists and is empty (script.js didn't render)
-            // OR if it's specifically the 'bros' category which has been problematic
-            if (grid && (grid.children.length === 0 || cat === 'bros')) {
+            // Force render for 'bros' AND 'label'
+            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label')) {
                 console.log('Force rendering category:', cat);
 
                 // Define data locally
-                const localBrosData = [
-                    { id: 'bros-1', name: 'Bros Floral Elegance', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/bros/1.jpeg' },
-                    { id: 'bros-2', name: 'Bros Royal Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Kristal', image: 'images/bros/2.jpeg' },
-                    { id: 'bros-3', name: 'Bros Classic Sunflower', category: 'bros', price: 'Hubungi Admin', material: 'Monel Premium', image: 'images/bros/3.jpeg' },
-                    { id: 'bros-4', name: 'Bros Golden Leaf', category: 'bros', price: 'Hubungi Admin', material: 'Monel Gold Plated', image: 'images/bros/4.jpeg' },
-                    { id: 'bros-5', name: 'Bros Twin Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/5.jpeg' },
-                    { id: 'bros-6', name: 'Bros Ribbon Charm', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/6.jpeg' },
-                    { id: 'bros-7', name: 'Bros Etnik Heritage', category: 'bros', price: 'Hubungi Admin', material: 'Monel Ukir Jepara', image: 'images/bros/7.jpeg' },
-                    { id: 'bros-8', name: 'Bros Minimalist Pearl', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Mutiara', image: 'images/bros/8.jpeg' },
-                    { id: 'bros-9', name: 'Bros Abstract Art', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/9.jpeg' },
-                    { id: 'bros-10', name: 'Bros Vintage Star', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/10.jpeg' },
-                    { id: 'bros-11', name: 'Bros Luxury Curve', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Polish', image: 'images/bros/11.jpeg' },
-                    { id: 'bros-12', name: 'Bros Modern Geometry', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/12.jpeg' }
-                ];
+                const localData = {
+                    'bros': [
+                        { id: 'bros-1', name: 'Bros Floral Elegance', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/bros/1.jpeg' },
+                        { id: 'bros-2', name: 'Bros Royal Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Kristal', image: 'images/bros/2.jpeg' },
+                        { id: 'bros-3', name: 'Bros Classic Sunflower', category: 'bros', price: 'Hubungi Admin', material: 'Monel Premium', image: 'images/bros/3.jpeg' },
+                        { id: 'bros-4', name: 'Bros Golden Leaf', category: 'bros', price: 'Hubungi Admin', material: 'Monel Gold Plated', image: 'images/bros/4.jpeg' },
+                        { id: 'bros-5', name: 'Bros Twin Butterfly', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/5.jpeg' },
+                        { id: 'bros-6', name: 'Bros Ribbon Charm', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/6.jpeg' },
+                        { id: 'bros-7', name: 'Bros Etnik Heritage', category: 'bros', price: 'Hubungi Admin', material: 'Monel Ukir Jepara', image: 'images/bros/7.jpeg' },
+                        { id: 'bros-8', name: 'Bros Minimalist Pearl', category: 'bros', price: 'Hubungi Admin', material: 'Monel & Mutiara', image: 'images/bros/8.jpeg' },
+                        { id: 'bros-9', name: 'Bros Abstract Art', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/9.jpeg' },
+                        { id: 'bros-10', name: 'Bros Vintage Star', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/10.jpeg' },
+                        { id: 'bros-11', name: 'Bros Luxury Curve', category: 'bros', price: 'Hubungi Admin', material: 'Monel High Polish', image: 'images/bros/11.jpeg' },
+                        { id: 'bros-12', name: 'Bros Modern Geometry', category: 'bros', price: 'Hubungi Admin', material: 'Monel', image: 'images/bros/12.jpeg' }
+                    ],
+                    'label': [
+                        { id: 'label-1', name: 'Label Brand Custom 01', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/1.jpeg' },
+                        { id: 'label-2', name: 'Label Brand Custom 02', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/2.jpeg' },
+                        { id: 'label-3', name: 'Label Brand Custom 03', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/3.jpeg' },
+                        { id: 'label-4', name: 'Label Brand Custom 04', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/4.jpeg' },
+                        { id: 'label-5', name: 'Label Brand Custom 05', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/5.jpeg' },
+                        { id: 'label-6', name: 'Label Brand Custom 06', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/6.jpeg' },
+                        { id: 'label-7', name: 'Label Brand Custom 07', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/7.jpeg' },
+                        { id: 'label-8', name: 'Label Brand Custom 08', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/8.jpeg' },
+                        { id: 'label-9', name: 'Label Brand Custom 09', category: 'label', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/label_brand/9.jpeg' }
+                    ]
+                };
 
-                if (cat === 'bros') {
-                    // Update Title manually to be sure
+                const activeData = localData[cat];
+
+                if (activeData) {
+                    // Update Title manually
                     const pageTitle = document.getElementById('pageTitle');
-                    if (pageTitle) pageTitle.innerHTML = `Koleksi <span class="gradient-text">Bros</span>`;
+                    if (pageTitle) {
+                        const titleText = cat === 'bros' ? 'Bros' : 'Label Brand';
+                        pageTitle.innerHTML = `Koleksi <span class="gradient-text">${titleText}</span>`;
+                    }
 
                     const pageDesc = document.getElementById('pageDescription');
                     if (pageDesc) {
-                        pageDesc.textContent = "Bros premium dari bahan monel & titanium yang anti karat, kuat, dan tampil mewah. Cocok untuk hijab, seragam, event, dan souvenir. Bisa custom nama, logo, atau desain sendiri sesuai kebutuhanmu.";
+                        if (cat === 'bros') {
+                            pageDesc.textContent = "Bros premium dari bahan monel & titanium yang anti karat, kuat, dan tampil mewah. Cocok untuk hijab, seragam, event, dan souvenir. Bisa custom nama, logo, atau desain sendiri sesuai kebutuhanmu.";
+                        } else {
+                            pageDesc.textContent = "Label brand eksklusif berbahan monel berkualitas tinggi. Tahan karat, awet, dan memberikan kesan premium pada produk fashion, hijab, dan aksesoris brand Anda. Terima pesanan custom dengan berbagai ukuran.";
+                        }
                         pageDesc.style.maxWidth = "800px";
                         pageDesc.style.marginLeft = "auto";
                         pageDesc.style.marginRight = "auto";
@@ -217,14 +240,22 @@
 
                     // Show the single custom order button
                     const orderBtn = document.getElementById('customOrderButton');
-                    if (orderBtn) orderBtn.style.display = 'block';
+                    if (orderBtn) {
+                        orderBtn.style.display = 'block';
+                        // Update button text/link based on category
+                        const btnText = orderBtn.querySelector('a');
+                        if (btnText && cat === 'label') {
+                            btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20membuat%20Label%20Brand%20custom.%20Mohon%20infonya.";
+                            btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Label Brand');
+                        }
+                    }
 
                     // Add "Back to Home" button
                     const container = grid.parentElement;
-                    const existingBackBtn = document.getElementById('brosBackBtn');
+                    const existingBackBtn = document.getElementById('catBackBtn');
                     if (!existingBackBtn) {
                         const backBtn = document.createElement('div');
-                        backBtn.id = 'brosBackBtn';
+                        backBtn.id = 'catBackBtn';
                         backBtn.style.marginBottom = '20px';
                         backBtn.style.textAlign = 'left';
                         backBtn.innerHTML = `<a href="index.html#products" class="back-link" style="display:inline-block; font-size:1rem; margin-bottom:0;">
@@ -236,7 +267,7 @@
                     // Clear and Render
                     grid.innerHTML = '';
 
-                    localBrosData.forEach((item, index) => {
+                    activeData.forEach((item, index) => {
                         const card = document.createElement('div');
                         card.className = 'product-card';
                         card.style.opacity = '0';
@@ -244,7 +275,7 @@
 
                         // Card with downloadable image, no order button
                         card.innerHTML = `
-                            <a href="${item.image}" download="bros-${item.id}.jpeg" style="display: block; text-decoration: none; cursor: pointer;">
+                            <a href="${item.image}" download="${cat}-${index + 1}.jpeg" style="display: block; text-decoration: none; cursor: pointer;">
                                 <div class="product-image">
                                     <img src="${item.image}" alt="${item.name}" loading="lazy" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='images/hero-bg.jpg'">
                                     <div class="download-badge">

@@ -728,6 +728,99 @@ document.addEventListener('DOMContentLoaded', function () {
             specs: { available: 'Ready Stock', weight: '13 gr' }
         },
 
+
+        // Label Brand
+        {
+            id: 'label-1',
+            name: 'Label Brand Custom 01',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Label brand custom eksklusif untuk meningkatkan nilai jual produk Anda. Bebas custom desain logo atau nama brand.',
+            image: 'images/label_brand/1.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-2',
+            name: 'Label Brand Custom 02',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Plat label berbahan monel anti karat. Cocok untuk hijab, tas, atau pakaian dengan finishing yang halus dan mewah.',
+            image: 'images/label_brand/2.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-3',
+            name: 'Label Brand Custom 03',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Identitas brand Anda tampil lebih profesional dengan label logam berkualitas. Tahan lama dan tidak berubah warna.',
+            image: 'images/label_brand/3.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-4',
+            name: 'Label Brand Custom 04',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Desain label yang elegan dan presisi. Pilihan tepat untuk branding produk fashion premium Anda.',
+            image: 'images/label_brand/4.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-5',
+            name: 'Label Brand Custom 05',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Label monel dengan teknik ukir atau etching yang detail. Memberikan kesan luxury pada setiap produk anda.',
+            image: 'images/label_brand/5.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-6',
+            name: 'Label Brand Custom 06',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Custom label untuk hijab dan busana muslim. Material aman, tidak tajam, dan menambah estetika produk.',
+            image: 'images/label_brand/6.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-7',
+            name: 'Label Brand Custom 07',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Tersedia berbagai bentuk dan ukuran sesuai kebutuhan branding Anda. Konsultasikan desain unik Anda bersama kami.',
+            image: 'images/label_brand/7.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-8',
+            name: 'Label Brand Custom 08',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Label logam finishing mengkilap yang awet. Investasi kecil untuk dampak branding yang besar.',
+            image: 'images/label_brand/8.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+        {
+            id: 'label-9',
+            name: 'Label Brand Custom 09',
+            category: 'label',
+            price: 'Hubungi Admin',
+            material: 'Monel High Quality',
+            description: 'Solusi branding eksklusif untuk UMKM maupun brand besar. Kualitas material terjamin standar ekspor.',
+            image: 'images/label_brand/9.jpeg',
+            specs: { available: 'Custom Order', weight: 'Est. 2-5 gr' }
+        },
+
         // Hijab
         {
             id: 'hijab-1',
