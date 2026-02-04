@@ -481,9 +481,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (button.type === 'submit') return;
 
         button.addEventListener('click', function (e) {
-            // Only handle if it's not an anchor link
+            // Only handle if it's not an anchor link AND doesn't already have a pre-filled WhatsApp message
             const href = this.getAttribute('href');
-            if (href && href.startsWith('#')) return; // Let anchor links work normally
+            if (href && (href.startsWith('#') || (href.includes('wa.me') && href.includes('text=')))) return;
 
             e.preventDefault();
 
@@ -501,7 +501,9 @@ Mohon informasi lebih lanjut mengenai:
 - Harga untuk mitra bisnis
 - Syarat dan ketentuan kerjasama
 
-Terima kasih! 🙏`;
+Terima kasih! 🙏
+
+(Pesan dari Website Trisna Monel)`;
             } else if (buttonText.includes('Lihat Koleksi')) {
                 message = `Halo Trisna Monel! 👋
 
@@ -512,13 +514,17 @@ Mohon informasi tentang:
 - Harga untuk mitra bisnis
 - Minimum order
 
-Terima kasih! 🙏`;
+Terima kasih! 🙏
+
+(Pesan dari Website Trisna Monel)`;
             } else {
                 message = `Halo Trisna Monel! 👋
 
-Saya tertarik untuk mengetahui lebih lanjut tentang produk dan kerjasama dengan Trisna Monel.
+Saya tertarik untuk memesan Produk Trisna Monel. Mohon info ketersediaan dan detailnya.
 
-Terima kasih! 🙏`;
+Terima kasih! 🙏
+
+(Pesan dari Website Trisna Monel)`;
             }
 
             // Encode message for URL
@@ -1117,8 +1123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // WhatsApp Button Logic
             const waBtn = document.getElementById('pdWhatsappBtn');
             if (waBtn) {
-                const waNumber = '6289524907552';
-                const message = `Halo Trisna Monel, saya tertarik untuk memesan produk *${product.name}* (ID: ${product.id}).\n\nBahan: ${product.material}\n\nMohon info ketersediaan dan detailnya. Terima kasih.\n\n_(Pesan dari Website Trisna Monel)_`;
+                const message = `Halo Trisna Monel, saya tertarik untuk memesan produk *${product.name}* (ID: ${product.id}).\n\nBahan: ${product.material}\n\nMohon info ketersediaan dan detailnya. Terima kasih.\n\n(Pesan dari Website Trisna Monel)`;
                 waBtn.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
             }
 
@@ -1252,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="product-description" style="margin-bottom:0.5rem; font-size: 0.9rem;">${item.material}</p>
                         <div class="product-features" style="justify-content: space-between; margin-top: 10px;">
                              <a href="product-detail.html?id=${item.id}" class="cta-button secondary" style="padding: 8px 15px; font-size: 0.8rem;">Detail</a>
-                             <a href="https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20produk%20*${encodeURIComponent(item.name)}*.%20Apakah%20masih%20tersedia?%0A%0A_(Pesan%20dari%20Website%20Trisna%20Monel)_" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
+                             <a href="https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20produk%20*${encodeURIComponent(item.name)}*.%20Apakah%20masih%20tersedia?%0A%0A(Pesan%20dari%20Website%20Trisna%20Monel)" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
                         </div>
                     </div>
                 `;
