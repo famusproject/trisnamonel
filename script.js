@@ -1118,7 +1118,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const waBtn = document.getElementById('pdWhatsappBtn');
             if (waBtn) {
                 const waNumber = '6289524907552';
-                const message = `Halo Trisna Monel, saya tertarik dengan produk *${product.name}* (ID: ${product.id}).\n\nHarga: ${product.price}\n\nApakah masih tersedia?`;
+                const message = `Halo Trisna Monel, saya tertarik untuk memesan produk *${product.name}* (ID: ${product.id}).\n\nBahan: ${product.material}\n\nMohon info ketersediaan dan detailnya. Terima kasih.\n\n_(Pesan dari Website Trisna Monel)_`;
                 waBtn.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
             }
 
@@ -1252,7 +1252,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="product-description" style="margin-bottom:0.5rem; font-size: 0.9rem;">${item.material}</p>
                         <div class="product-features" style="justify-content: space-between; margin-top: 10px;">
                              <a href="product-detail.html?id=${item.id}" class="cta-button secondary" style="padding: 8px 15px; font-size: 0.8rem;">Detail</a>
-                             <a href="https://wa.me/6289524907552?text=Halo%20saya%20tertarik%20dengan%20${encodeURIComponent(item.name)}" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
+                             <a href="https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20produk%20*${encodeURIComponent(item.name)}*.%20Apakah%20masih%20tersedia?%0A%0A_(Pesan%20dari%20Website%20Trisna%20Monel)_" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
                         </div>
                     </div>
                 `;

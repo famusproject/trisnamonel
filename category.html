@@ -281,19 +281,45 @@
                     const orderBtn = document.getElementById('customOrderButton');
                     if (orderBtn) {
                         orderBtn.style.display = 'block';
-                        // Update button text/link based on category
-                        const btnText = orderBtn.querySelector('a');
-                        if (btnText) {
-                            if (cat === 'label') {
-                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20membuat%20Label%20Brand%20custom.%20Mohon%20infonya.";
-                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Label Brand');
-                            } else if (cat === 'souvenir') {
-                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20Souvenir%20%26%20Gift%20custom.%20Mohon%20infonya.";
-                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Souvenir & Gift');
-                            } else if (cat === 'gelang') {
-                                btnText.href = "https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20Gelang%20custom.%20Mohon%20infonya.";
-                                btnText.innerHTML = btnText.innerHTML.replace('Bros', 'Gelang');
-                            }
+
+                        const btnLink = orderBtn.querySelector('a');
+                        if (btnLink) {
+                            // Define WhatsApp message and label mapping
+                            const waConfig = {
+                                'bros': {
+                                    label: 'Pesan Bros Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk membuat Bros custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                },
+                                'label': {
+                                    label: 'Pesan Label Brand Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk membuat Label Brand custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                },
+                                'souvenir': {
+                                    label: 'Pesan Souvenir & Gift Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk memesan Souvenir & Gift custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                },
+                                'gelang': {
+                                    label: 'Pesan Gelang Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk memesan Gelang custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                },
+                                'kalung': {
+                                    label: 'Pesan Kalung Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk memesan Kalung custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                },
+                                'hijab': {
+                                    label: 'Pesan Aksesoris Hijab Custom via WhatsApp',
+                                    message: 'Halo Trisna Monel, saya tertarik untuk memesan Aksesoris Hijab custom. Mohon infonya.\n\n(Pesan dari Website Trisna Monel)'
+                                }
+                            };
+
+                            const config = waConfig[cat] || waConfig['bros']; // Fallback to bros
+
+                            // Update Link
+                            btnLink.href = `https://wa.me/6289524907552?text=${encodeURIComponent(config.message)}`;
+
+                            // Update Text (keep the SVG icon)
+                            const svgIcon = btnLink.querySelector('svg').outerHTML;
+                            btnLink.innerHTML = `${svgIcon} ${config.label}`;
                         }
                     }
 
