@@ -1630,10 +1630,11 @@ section {
     }
 
     .hero-title {
-        font-size: 2.25rem;
-        line-height: 1.2;
+        font-size: 2rem;
+        line-height: 1.1;
         width: 100%;
         text-align: center;
+        margin-bottom: var(--spacing-md);
     }
 
     .hero-subtitle {
@@ -1657,6 +1658,10 @@ section {
     .cta-button {
         width: 100%;
         justify-content: center;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 
     .hero-stats {
@@ -1731,11 +1736,7 @@ section {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.85rem;
-    }
-
-    .hero-title br {
-        display: none;
+        font-size: 1.75rem;
     }
 
     .section-title {
