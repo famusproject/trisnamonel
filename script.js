@@ -1069,6 +1069,20 @@ document.addEventListener('DOMContentLoaded', function () {
             specs: { available: 'Custom Order', weight: 'Est. 10-20 gr' }
         },
 
+        // Cincin
+        { id: 'cincin-1', name: 'Cincin Monel Elegant 01', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel premium dengan desain elegan dan kilau yang tahan lama. Anti karat dan aman untuk kulit.', image: 'images/cincin/1.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-2', name: 'Cincin Monel Elegant 02', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel modern dengan sentuhan minimalis.', image: 'images/cincin/2.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-3', name: 'Cincin Monel Elegant 03', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Desain cincin klasik yang cocok untuk segala acara.', image: 'images/cincin/3.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-4', name: 'Cincin Monel Elegant 04', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel dengan pengerjaan halus dan detail yang cantik.', image: 'images/cincin/4.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-5', name: 'Cincin Monel Elegant 05', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Tampil berkelas dengan cincin monel berkualitas tinggi.', image: 'images/cincin/5.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-6', name: 'Cincin Monel Elegant 06', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel anti karat dengan desain yang nyaman dipakai sehari-hari.', image: 'images/cincin/6.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-7', name: 'Cincin Monel Elegant 07', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kilau monel asli yang tidak akan pudar.', image: 'images/cincin/7.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-8', name: 'Cincin Monel Elegant 08', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel dengan motif unik yang artistik.', image: 'images/cincin/8.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-9', name: 'Cincin Monel Elegant 09', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Pilihan tepat untuk aksesoris jari yang elegan.', image: 'images/cincin/9.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-10', name: 'Cincin Monel Elegant 10', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Cincin monel berkualitas premium dari Trisna Monel.', image: 'images/cincin/10.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-11', name: 'Cincin Monel Elegant 11', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Desain cincin mewah yang memikat perhatian.', image: 'images/cincin/11.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+        { id: 'cincin-12', name: 'Cincin Monel Elegant 12', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Lengkapi koleksi perhiasan Anda dengan cincin monel terbaik.', image: 'images/cincin/12.jpeg', specs: { available: 'Ready Stock', weight: '5 gr' } },
+
         // Hijab
         {
             id: 'hijab-1',

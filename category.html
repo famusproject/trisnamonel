@@ -181,8 +181,8 @@
             const cat = urlParams.get('category');
             const grid = document.getElementById('categoryProductGrid');
 
-            // Force render for 'bros', 'label', 'souvenir', AND 'gelang'
-            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label' || cat === 'souvenir' || cat === 'gelang')) {
+            // Force render for 'bros', 'label', 'souvenir', 'gelang', AND 'cincin'
+            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label' || cat === 'souvenir' || cat === 'gelang' || cat === 'cincin')) {
                 console.log('Force rendering category:', cat);
 
                 // Define data locally
@@ -241,6 +241,20 @@
                         { id: 'souvenir-10', name: 'Souvenir Monel Premium 10', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/10.jpeg' },
                         { id: 'souvenir-11', name: 'Souvenir Monel Premium 11', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/11.jpeg' },
                         { id: 'souvenir-12', name: 'Souvenir Monel Premium 12', category: 'souvenir', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/gift/12.jpeg' }
+                    ],
+                    'cincin': [
+                        { id: 'cincin-1', name: 'Cincin Monel Elegant 01', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/1.jpeg' },
+                        { id: 'cincin-2', name: 'Cincin Monel Elegant 02', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/2.jpeg' },
+                        { id: 'cincin-3', name: 'Cincin Monel Elegant 03', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/3.jpeg' },
+                        { id: 'cincin-4', name: 'Cincin Monel Elegant 04', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/4.jpeg' },
+                        { id: 'cincin-5', name: 'Cincin Monel Elegant 05', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/5.jpeg' },
+                        { id: 'cincin-6', name: 'Cincin Monel Elegant 06', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/6.jpeg' },
+                        { id: 'cincin-7', name: 'Cincin Monel Elegant 07', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/7.jpeg' },
+                        { id: 'cincin-8', name: 'Cincin Monel Elegant 08', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/8.jpeg' },
+                        { id: 'cincin-9', name: 'Cincin Monel Elegant 09', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/9.jpeg' },
+                        { id: 'cincin-10', name: 'Cincin Monel Elegant 10', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/10.jpeg' },
+                        { id: 'cincin-11', name: 'Cincin Monel Elegant 11', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/11.jpeg' },
+                        { id: 'cincin-12', name: 'Cincin Monel Elegant 12', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/12.jpeg' }
                     ]
                 };
 
@@ -255,6 +269,7 @@
                         else if (cat === 'label') titleText = 'Label Brand';
                         else if (cat === 'souvenir') titleText = 'Souvenir & Gift';
                         else if (cat === 'gelang') titleText = 'Gelang';
+                        else if (cat === 'cincin') titleText = 'Cincin';
 
                         pageTitle.innerHTML = `Koleksi <span class="gradient-text">${titleText}</span>`;
                     }
@@ -269,6 +284,8 @@
                             pageDesc.textContent = "Koleksi souvenir dan gift monel & titanium premium untuk berbagai keperluan seperti pernikahan, seminar, instansi, maupun hadiah personal. Produk eksklusif, tahan lama, dan anti karat.";
                         } else if (cat === 'gelang') {
                             pageDesc.textContent = "Koleksi gelang monel & titanium premium dengan desain elegan dan modern. Terbuat dari bahan monel berkualitas tinggi yang anti karat, berkilau, dan nyaman digunakan untuk aktivitas sehari-hari.";
+                        } else if (cat === 'cincin') {
+                            pageDesc.textContent = "Koleksi cincin monel & titanium premium yang elegan dan mewah. Tersedia berbagai model cincin pria dan wanita yang anti karat, berkilau alami, dan nyaman melingkar di jari Anda.";
                         }
                         pageDesc.style.maxWidth = "800px";
                         pageDesc.style.marginLeft = "auto";
@@ -291,7 +308,8 @@
                                 'souvenir': 'Souvenir & Gift',
                                 'gelang': 'Gelang',
                                 'kalung': 'Kalung',
-                                'hijab': 'Aksesoris Hijab'
+                                'hijab': 'Aksesoris Hijab',
+                                'cincin': 'Cincin'
                             };
 
                             const catName = waConfig[cat] || 'Aksesoris';
