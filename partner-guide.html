@@ -62,9 +62,10 @@
         }
 
         .type-icon {
-            font-size: 2.5rem;
             margin-bottom: var(--spacing-md);
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .type-card h3 {
@@ -208,7 +209,20 @@
                 <div class="partnership-types">
                     <!-- Reseller -->
                     <div class="type-card" data-aos="fade-up" data-aos-delay="100">
-                        <span class="type-icon">🛍️</span>
+                        <span class="type-icon">
+                            <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+                                <path d="M8 16L24 8L40 16V32L24 40L8 32V16Z" stroke="url(#benefit-gradient-1)"
+                                    stroke-width="2" stroke-linejoin="round" />
+                                <path d="M24 8V24M24 24L40 16M24 24L8 16" stroke="url(#benefit-gradient-1)"
+                                    stroke-width="2" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="benefit-gradient-1" x1="8" y1="8" x2="40" y2="40">
+                                        <stop offset="0%" stop-color="#D4AF37" />
+                                        <stop offset="100%" stop-color="#F4E4C1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
                         <h3>Reseller</h3>
                         <p>Cocok untuk Anda yang ingin mulai berjualan dengan sistem stok produk reguler.</p>
                         <ul class="benefit-list">
@@ -221,7 +235,24 @@
 
                     <!-- Grosir -->
                     <div class="type-card" data-aos="fade-up" data-aos-delay="200">
-                        <span class="type-icon">📦</span>
+                        <span class="type-icon">
+                            <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+                                <rect x="6" y="14" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
+                                    stroke-width="2" />
+                                <rect x="28" y="14" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
+                                    stroke-width="2" />
+                                <rect x="6" y="32" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
+                                    stroke-width="2" />
+                                <rect x="28" y="32" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
+                                    stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="benefit-gradient-2" x1="6" y1="14" x2="42" y2="46">
+                                        <stop offset="0%" stop-color="#F4C2C2" />
+                                        <stop offset="100%" stop-color="#E8B4B8" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
                         <h3>Grosir</h3>
                         <p>Untuk pembelian dalam jumlah besar dengan harga produksi terbaik.</p>
                         <ul class="benefit-list">
@@ -234,7 +265,23 @@
 
                     <!-- Vendor / Manufacturer Brand -->
                     <div class="type-card" data-aos="fade-up" data-aos-delay="300">
-                        <span class="type-icon">🏢</span>
+                        <span class="type-icon">
+                            <svg width="64" height="64" viewBox="0 0 48 48" fill="none">
+                                <rect x="6" y="20" width="36" height="20" rx="2" stroke="url(#benefit-gradient-3)"
+                                    stroke-width="2" />
+                                <path d="M6 20L24 8L42 20" stroke="url(#benefit-gradient-3)" stroke-width="2"
+                                    stroke-linejoin="round" />
+                                <rect x="14" y="28" width="6" height="12" fill="url(#benefit-gradient-3)" />
+                                <rect x="28" y="28" width="6" height="12" fill="url(#benefit-gradient-3)" />
+                                <rect x="18" y="14" width="12" height="6" fill="url(#benefit-gradient-3)" />
+                                <defs>
+                                    <linearGradient id="benefit-gradient-3" x1="6" y1="8" x2="42" y2="40">
+                                        <stop offset="0%" stop-color="#C6A87C" />
+                                        <stop offset="100%" stop-color="#E8D5C4" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
                         <h3>Vendor / Manufacturer Brand</h3>
                         <p>Produksi eksklusif untuk brand fashion atau souvenir perusahaan Anda.</p>
                         <ul class="benefit-list">
