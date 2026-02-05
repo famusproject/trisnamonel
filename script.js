@@ -691,26 +691,18 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         // Kalung
-        {
-            id: 'kalung-1',
-            name: 'Kalung Eksklusif',
-            category: 'kalung',
-            price: 'Rp 120.000',
-            material: 'Gold Plated',
-            description: 'Kalung eksklusif dengan lapisan emas yang memberikan kilau mewah. Desain modern yang timeless, sempurna untuk melengkapi penampilan anggun Anda.',
-            image: 'images/hero-bg.jpg', // Placeholder
-            specs: { available: 'Limited Stock', weight: '25 gr' }
-        },
-        {
-            id: 'kalung-2',
-            name: 'Kalung Mutiara',
-            category: 'kalung',
-            price: 'Rp 150.000',
-            material: 'Mutiara Air Tawar',
-            description: 'Keanggunan klasik dalam seuntai kalung mutiara air tawar asli. Dipadukan dengan pengait monel yang kuat dan elegan.',
-            image: 'images/hero-bg.jpg', // Placeholder
-            specs: { available: 'Ready Stock', weight: '30 gr' }
-        },
+        { id: 'kalung-1', name: 'Kalung Monel Elegant 01', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kalung monel premium dengan desain elegan dan kilau yang tahan lama. Anti karat dan aman untuk kulit.', image: 'images/kalung/1.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-2', name: 'Kalung Monel Elegant 02', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Desain kalung minimalis modern yang cocok untuk melengkapi penampilan sehari-hari Anda.', image: 'images/kalung/2.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-3', name: 'Kalung Monel Elegant 03', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kalung monel dengan detail pengerjaan yang halus dan mewah.', image: 'images/kalung/3.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-4', name: 'Kalung Monel Elegant 04', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Koleksi kalung eksklusif untuk kesan yang lebih profesional dan anggun.', image: 'images/kalung/4.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-5', name: 'Kalung Monel Elegant 05', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kalung monel berkualitas tinggi dengan daya tahan maksimal.', image: 'images/kalung/5.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-6', name: 'Kalung Monel Elegant 06', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Tampil menawan dengan perhiasan monel yang dirancang khusus.', image: 'images/kalung/6.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-7', name: 'Kalung Monel Elegant 07', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kalung dengan finishing high-polish untuk kilap yang memukau.', image: 'images/kalung/7.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-8', name: 'Kalung Monel Elegant 08', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Pilihan hadiah sempurna untuk orang terkasih atau koleksi pribadi.', image: 'images/kalung/8.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-9', name: 'Kalung Monel Elegant 09', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Desain timeless yang tidak pernah ketinggalan zaman.', image: 'images/kalung/9.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-10', name: 'Kalung Monel Elegant 10', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kualitas material monel asli yang tahan terhadap korosi.', image: 'images/kalung/10.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-11', name: 'Kalung Monel Elegant 11', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Detail artistik yang membedakan produk kami dari yang lain.', image: 'images/kalung/11.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
+        { id: 'kalung-12', name: 'Kalung Monel Elegant 12', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', description: 'Kalung monel premium untuk melengkapi gaya berkelas Anda.', image: 'images/kalung/12.jpeg', specs: { available: 'Ready Stock', weight: '15 gr' } },
 
         // Bros
         {

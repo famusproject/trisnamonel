@@ -158,10 +158,10 @@
                     </div>
                     <div class="footer-column">
                         <h4>Bantuan</h4>
-                        <a href="#">FAQ</a>
-                        <a href="#">Syarat & Ketentuan</a>
-                        <a href="#">Kebijakan Privasi</a>
-                        <a href="#">Panduan Mitra</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="terms.html">Syarat & Ketentuan</a>
+                        <a href="privacy.html">Kebijakan Privasi</a>
+                        <a href="partner-guide.html">Panduan Mitra</a>
                     </div>
                 </div>
             </div>
@@ -181,8 +181,8 @@
             const cat = urlParams.get('category');
             const grid = document.getElementById('categoryProductGrid');
 
-            // Force render for 'bros', 'label', 'souvenir', 'gelang', AND 'cincin'
-            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label' || cat === 'souvenir' || cat === 'gelang' || cat === 'cincin')) {
+            // Force render for 'bros', 'label', 'souvenir', 'gelang', 'cincin', AND 'kalung'
+            if (grid && (grid.children.length === 0 || cat === 'bros' || cat === 'label' || cat === 'souvenir' || cat === 'gelang' || cat === 'cincin' || cat === 'kalung')) {
                 console.log('Force rendering category:', cat);
 
                 // Define data locally
@@ -255,6 +255,20 @@
                         { id: 'cincin-10', name: 'Cincin Monel Elegant 10', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/10.jpeg' },
                         { id: 'cincin-11', name: 'Cincin Monel Elegant 11', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/11.jpeg' },
                         { id: 'cincin-12', name: 'Cincin Monel Elegant 12', category: 'cincin', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/cincin/12.jpeg' }
+                    ],
+                    'kalung': [
+                        { id: 'kalung-1', name: 'Kalung Monel Elegant 01', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/1.jpeg' },
+                        { id: 'kalung-2', name: 'Kalung Monel Elegant 02', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/2.jpeg' },
+                        { id: 'kalung-3', name: 'Kalung Monel Elegant 03', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/3.jpeg' },
+                        { id: 'kalung-4', name: 'Kalung Monel Elegant 04', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/4.jpeg' },
+                        { id: 'kalung-5', name: 'Kalung Monel Elegant 05', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/5.jpeg' },
+                        { id: 'kalung-6', name: 'Kalung Monel Elegant 06', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/6.jpeg' },
+                        { id: 'kalung-7', name: 'Kalung Monel Elegant 07', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/7.jpeg' },
+                        { id: 'kalung-8', name: 'Kalung Monel Elegant 08', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/8.jpeg' },
+                        { id: 'kalung-9', name: 'Kalung Monel Elegant 09', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/9.jpeg' },
+                        { id: 'kalung-10', name: 'Kalung Monel Elegant 10', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/10.jpeg' },
+                        { id: 'kalung-11', name: 'Kalung Monel Elegant 11', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/11.jpeg' },
+                        { id: 'kalung-12', name: 'Kalung Monel Elegant 12', category: 'kalung', price: 'Hubungi Admin', material: 'Monel High Quality', image: 'images/kalung/12.jpeg' }
                     ]
                 };
 
@@ -270,6 +284,7 @@
                         else if (cat === 'souvenir') titleText = 'Souvenir & Gift';
                         else if (cat === 'gelang') titleText = 'Gelang';
                         else if (cat === 'cincin') titleText = 'Cincin';
+                        else if (cat === 'kalung') titleText = 'Kalung';
 
                         pageTitle.innerHTML = `Koleksi <span class="gradient-text">${titleText}</span>`;
                     }
@@ -286,6 +301,8 @@
                             pageDesc.textContent = "Koleksi gelang monel & titanium premium dengan desain elegan dan modern. Terbuat dari bahan monel berkualitas tinggi yang anti karat, berkilau, dan nyaman digunakan untuk aktivitas sehari-hari.";
                         } else if (cat === 'cincin') {
                             pageDesc.textContent = "Koleksi cincin monel & titanium premium yang elegan dan mewah. Tersedia berbagai model cincin pria dan wanita yang anti karat, berkilau alami, dan nyaman melingkar di jari Anda.";
+                        } else if (cat === 'kalung') {
+                            pageDesc.textContent = "Koleksi kalung karakter monel & titanium premium dengan berbagai pilihan liontin yang indah. Material berkualitas tinggi yang anti pudar, anti karat, dan memberikan sentuhan mewah pada leher Anda.";
                         }
                         pageDesc.style.maxWidth = "800px";
                         pageDesc.style.marginLeft = "auto";
