@@ -171,7 +171,7 @@ ${formData.message}
 _Pesan ini dikirim melalui website Trisna Monel_`;
 
             // WhatsApp number (format: country code + number without +, -, or spaces)
-            const waNumber = '6289524907552'; // Trisna Monel WhatsApp
+            const waNumber = '6289524909345'; // Trisna Monel WhatsApp
 
             // Encode message for URL
             const encodedMessage = encodeURIComponent(waMessage);
@@ -471,7 +471,7 @@ window.addEventListener('scroll', debounce(function () {
 // ===========================
 document.addEventListener('DOMContentLoaded', function () {
     // WhatsApp number
-    const waNumber = '6289524907552'; // Trisna Monel WhatsApp
+    const waNumber = '6289524909345'; // Trisna Monel WhatsApp
 
     // Get all CTA buttons
     const ctaButtons = document.querySelectorAll('.cta-button-nav, .cta-button.primary');
@@ -1263,7 +1263,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p class="product-description" style="margin-bottom:0.5rem; font-size: 0.9rem;">${item.material}</p>
                         <div class="product-features" style="justify-content: space-between; margin-top: 10px;">
                              <a href="product-detail.html?id=${item.id}" class="cta-button secondary" style="padding: 8px 15px; font-size: 0.8rem;">Detail</a>
-                             <a href="https://wa.me/6289524907552?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20produk%20*${encodeURIComponent(item.name)}*.%20Apakah%20masih%20tersedia?%0A%0A(Pesan%20dari%20Website%20Trisna%20Monel)" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
+                             <a href="https://wa.me/6289524909345?text=Halo%20Trisna%20Monel,%20saya%20tertarik%20untuk%20memesan%20produk%20*${encodeURIComponent(item.name)}*.%20Apakah%20masih%20tersedia?%0A%0A(Pesan%20dari%20Website%20Trisna%20Monel)" target="_blank" class="cta-button primary" style="padding: 8px 15px; font-size: 0.8rem;">Pesan</a>
                         </div>
                     </div>
                 `;
