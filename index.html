@@ -67,24 +67,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-home" id="navbar">
         <div class="container">
             <div class="nav-content">
                 <a href="#home" class="logo">
                     <img src="images/logo.png" alt="Trisna Monel">
+                    <span class="logo-text">Trisna Monel</span>
                 </a>
                 <div class="nav-links" id="navLinks">
                     <a href="#home" class="nav-link active">Beranda</a>
-                    <a href="#about" class="nav-link">Tentang Kami</a>
+                    <a href="#about" class="nav-link">Tentang Perusahaan</a>
                     <a href="#products" class="nav-link">Produk</a>
-                    <a href="#partnership" class="nav-link">Partnership</a>
+                    <a href="#partnership" class="nav-link">Peluang Mitra</a>
                     <a href="#contact" class="nav-link">Kontak</a>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -93,7 +94,7 @@
                     <span></span>
                 </button>
                 <a href="https://wa.me/6289524909345?text=Halo%20Trisna%20Monel!%20Saya%20tertarik%20untuk%20berkonsultasi.%0A%0A(Pesan%20dari%20Website%20Trisna%20Monel)"
-                    target="_blank" class="cta-button-nav">Hubungi Kami</a>
+                    target="_blank" class="cta-button-nav">Daftar Jadi Mitra</a>
             </div>
         </div>
     </nav>
@@ -106,19 +107,23 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="hero-subtitle" data-aos="fade-up">Premium Accessories</span>
+                    <span class="hero-subtitle" data-aos="fade-up" style="font-size: 0.7rem;">Premium Accessories</span>
                     <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                        Keanggunan dalam<br>
-                        <span class="gradient-text">setiap detail</span>
+                        Pusat Produksi, Distributor & Supplier <span class="gradient-text">Perhiasan Monel Jepara Tangan
+                            Pertama</span>
                     </h1>
                     <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-                        Koleksi aksesoris wanita & pria berkualitas tinggi yang dirancang dengan sempurna.
-                        Bergabunglah dengan jaringan mitra bisnis kami dan raih kesuksesan bersama.
+                        Kami siap jadi Partner Produksi untuk bisnis perhiasan Monel & Lapis Emas Anda. Kapasitas
+                        produksi besar dengan standar kualitas ekspor, siap kirim partai besar ke seluruh Indonesia.
+                        <br>
+                        Bonus Free akses ke ribuan desain viral siap jual plus foto produk gratis. Mau main dropship
+                        aman atau stok kodian dengan harga dasar termurah? Semua bisa. Margin keuntungan Anda yang atur,
+                        kami yang urus kualitasnya.
                     </p>
                     <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
                         <a href="https://wa.me/6289524909345?text=Halo%20Trisna%20Monel!%0A%0ASaya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20tentang%20peluang%20kerjasama%20dengan%20Trisna%20Monel.%0A%0AMohon%20informasi%20lebih%20lanjut%20mengenai:%0A%E2%80%A2%20Program%20kemitraan%20yang%20tersedia%0A%E2%80%A2%20Harga%20untuk%20mitra%20bisnis%0A%E2%80%A2%20Syarat%20dan%20ketentuan%20kerjasama%0A%0ATerima%20kasih!%0A%0A(Pesan%20dari%20Website%20Trisna%20Monel)"
                             target="_blank" class="cta-button primary">
-                            <span>Ayo Kerja Sama</span>
+                            <span>Mari Bermitra dengan Kami</span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -136,30 +141,55 @@
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <div class="stat-number">10000+</div>
-                            <div class="stat-label">Produk Terjual</div>
+                            <div class="stat-label">Persenan Terselesaikan</div>
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <div class="stat-number">50+</div>
-                            <div class="stat-label">Kota Jangkauan</div>
+                            <div class="stat-label">Pengiriman Seluruh Indonesia</div>
                         </div>
                     </div>
                 </div>
                 <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                    <!-- Product Images with Animation -->
-                    <div class="hero-products">
-                        <div class="hero-product-img product-img-1">
-                            <img src="images/gelang/1.jpeg" alt="Gelang Monel Anti Karat Premium" loading="eager">
+                    <!-- Hero Product Slider -->
+                    <div class="hero-slider-container">
+                        <div class="hero-slider-card">
+                            <div class="hero-slide active">
+                                <img src="images/label_brand/1.jpeg" alt="Label Brand Metal Tag Premium">
+                                <div class="slide-content">
+                                    <span class="slide-category">Label Brand</span>
+                                    <h3 class="slide-title">Premium Metal Tag</h3>
+                                </div>
+                            </div>
+                            <div class="hero-slide">
+                                <img src="images/gift/1.jpeg" alt="Souvenir & Gift Premium">
+                                <div class="slide-content">
+                                    <span class="slide-category">Souvenir & Gift</span>
+                                    <h3 class="slide-title">Exclusive Gift Collection</h3>
+                                </div>
+                            </div>
+                            <div class="hero-slide">
+                                <img src="images/label_brand/9.jpeg" alt="Custom Label Brand Premium">
+                                <div class="slide-content">
+                                    <span class="slide-category">Label Brand</span>
+                                    <h3 class="slide-title">Branding Identity</h3>
+                                </div>
+                            </div>
+                            <div class="hero-slide">
+                                <img src="images/gift/4.jpeg" alt="Custom Souvenir Premium">
+                                <div class="slide-content">
+                                    <span class="slide-category">Souvenir & Gift</span>
+                                    <h3 class="slide-title">Custom Souvenir</h3>
+                                </div>
+                            </div>
                         </div>
-                        <div class="hero-product-img product-img-2">
-                            <img src="images/bros/1.jpeg" alt="Bros Hijab Logam Premium Anti Karat" loading="eager">
+                        <div class="slider-dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <div class="hero-product-img product-img-3">
-                            <img src="images/kalung/1.jpeg" alt="Kalung Nama Stainless Steel Custom" loading="eager">
-                        </div>
-                        <div class="hero-product-img product-img-4">
-                            <img src="images/cincin/1.jpeg" alt="Cincin Monel Custom Eksklusif" loading="eager">
-                        </div>
+                        <div class="slider-decoration"></div>
                     </div>
                 </div>
             </div>
@@ -177,7 +207,7 @@
         <div class="container">
             <!-- Visi Misi Header -->
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Tentang Kami</span>
+                <span class="section-subtitle">Tentang Perusahaan</span>
                 <h2 class="section-title">Visi & <span class="gradient-text">Misi</span></h2>
             </div>
 
@@ -186,63 +216,50 @@
                 <!-- Visi -->
                 <div class="vm-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="vm-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-                            <circle cx="12" cy="12" r="3" />
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
                         </svg>
                     </div>
                     <h3>Visi</h3>
-                    <p>Membangun Kolaborasi strategis untuk meningkatkan nilai jual brand lokal di pasar nasional</p>
+                    <p>Menjadi ekosistem supply chain perhiasan custom terbesar di Indonesia yang memberdayakan ratusan
+                        brand lokal untuk bersaing di pasar global</p>
                 </div>
 
                 <!-- Misi -->
                 <div class="vm-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="vm-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5Z" />
-                            <path d="M2 17l10 5 10-5" />
-                            <path d="M2 12l10 5 10-5" />
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
                         </svg>
                     </div>
                     <h3>Misi</h3>
-                    <p>Menjadi pusat produksi aksesoris monel berkualitas unggul untuk mendukung pertumbuhan industri
-                        fashion dan brand lokal Indonesia</p>
+                    <p>Menyediakan akses manufaktur perhiasan berkualitas tinggi yang mudah, cepat, dan profitable bagi
+                        mitra bisnis. Kami berinovasi dalam teknologi produksi untuk menjamin suplai yang konsisten.</p>
                 </div>
 
                 <!-- Tujuan -->
                 <div class="vm-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="vm-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <path d="M3.3 7l8.7 5 8.7-5"></path>
+                            <path d="M12 22V12"></path>
                         </svg>
                     </div>
                     <h3>Tujuan</h3>
-                    <p>Menjadi mitra produksi aksesoris monel berkualitas, tepat waktu, dan aman bagi kulit</p>
+                    <p>Material Monel & Lapis Emas aman bagi kulit (Hypoallergenic), pengerjaan presisi yang rapi, serta
+                        ketepatan waktu pengiriman sebagai prioritas utama layanan kami.</p>
                 </div>
             </div>
 
-            <!-- Sejarah Perusahaan -->
-            <div class="history-section" data-aos="fade-up">
-                <div class="history-content">
-                    <h3 class="history-title">Sejarah Perusahaan</h3>
-                    <p class="history-text">
-                        Trisna Monel berdiri pada tahun 2022 di Kalinyamatan, Jepara, dengan misi mentransformasi
-                        kerajinan logam lokal menjadi perhiasan modern kualitas premium. Berawal dari workshop skala
-                        kecil, kami terus berkembang melalui investasi pada tenaga ahli dan teknologi high-polish
-                        finishing serta grafir laser.
-                    </p>
-                    <p class="history-text">
-                        Kombinasi antara keahlian tradisional (heritage) dan manajemen produksi modern memungkinkan kami
-                        memenuhi standar tinggi brand fashion nasional. Kini, Trisna Monel hadir sebagai mitra
-                        manufaktur tepercaya yang mengedepankan integritas kualitas, ketepatan waktu, dan inovasi desain
-                        berkelanjutan.
-                    </p>
-                </div>
-            </div>
+
 
             <!-- Our Journey -->
             <div class="journey-section">
@@ -291,42 +308,44 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Future Steps -->
-                <div class="future-steps" data-aos="fade-up">
-                    <h3 class="future-title">Langkah ke Depan</h3>
-                    <div class="future-grid">
-                        <div class="future-card">
-                            <div class="future-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                    <line x1="12" y1="22.08" x2="12" y2="12" />
-                                </svg>
-                            </div>
-                            <h4>Digitalisasi & Integrasi Produksi</h4>
-                            <p>Mengadopsi teknologi desain berbantuan komputer (CAD) dan pemesanan digital untuk
-                                mempercepat proses kustomisasi dan mempermudah komunikasi dengan mitra bisnis.</p>
+            <!-- Future Steps -->
+            <div class="future-steps" data-aos="fade-up">
+                <h3 class="future-title">Langkah ke Depan</h3>
+                <div class="future-grid">
+                    <div class="future-card">
+                        <div class="future-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
                         </div>
-                        <div class="future-card">
-                            <div class="future-icon">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M2 12h20" />
-                                    <path
-                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                                </svg>
-                            </div>
-                            <h4>Peningkatan Kapasitas Ekspor</h4>
-                            <p>Memperluas jangkauan distribusi hingga ke pasar internasional, membawa kerajinan tangan
-                                khas Kalinyamatan ke kancah global.</p>
+                        <h4>Digitalisasi & Integrasi Produksi</h4>
+                        <p>Kami tinggalkan cara lama yang rawan salah. Dengan sistem desain komputer (CAD) dan cetakan
+                            digital, detail logo atau nama pesanan Anda akan terukir akurat, rapi, dan proses pengerjaan
+                            lebih cepat.</p>
+                    </div>
+                    <div class="future-card">
+                        <div class="future-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
                         </div>
+                        <h4>Peningkatan Kapasitas Ekspor</h4>
+                        <p>Memperluas jangkauan distribusi hingga ke pasar internasional, membawa kerajinan tangan
+                            khas Kalinyamatan ke kancah global.</p>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -337,133 +356,79 @@
                 <span class="section-subtitle">Koleksi Produk</span>
                 <h2 class="section-title">Produk <span class="gradient-text">Unggulan Kami</span></h2>
                 <p class="section-description">
-                    Jelajahi koleksi produk aksesoris kami yang dirancang dengan detail sempurna
-                    untuk melengkapi setiap penampilan.
+                    Produk-produk pilihan yang telah terbukti laku keras di pasaran. Dirancang khusus untuk memudahkan
+                    Reseller dan Distributor mencapai penjualan yang cepat dan margin tinggi.
                 </p>
             </div>
 
 
 
             <!-- Products Grid - 6 Categories -->
+            <!-- Products Grid - Concept Design -->
             <div class="products-grid">
-                <!-- Gelang Category -->
-                <div class="product-card" data-category="gelang" data-aos="fade-up" data-aos-delay="100"
-                    onclick="window.location.href='category.html?category=gelang'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/gelang/1.jpeg" alt="Koleksi Gelang Monel Anti Karat Trisna Monel"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Gelang</span>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Koleksi Gelang</h3>
-                        <p class="product-description">Gelang elegan dari bahan monel berkualitas premium.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
+                <!-- Cincin Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100"
+                    onclick="window.location.href='category.html?category=cincin'">
+                    <img src="images/cincin/1.jpeg" alt="Koleksi Cincin Monel Custom Trisna Monel">
+
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">cincin</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
                 </div>
 
                 <!-- Kalung Category -->
-                <div class="product-card" data-category="kalung" data-aos="fade-up" data-aos-delay="200"
-                    onclick="window.location.href='category.html?category=kalung'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/kalung/1.jpeg" alt="Koleksi Kalung Nama Stainless Steel Trisna Monel"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Kalung</span>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Koleksi Kalung</h3>
-                        <p class="product-description">Kalung mewah untuk menyempurnakan penampilan Anda.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200"
+                    onclick="window.location.href='category.html?category=kalung'">
+                    <img src="images/kalung/1.jpeg" alt="Koleksi Kalung Nama Stainless Steel Trisna Monel">
+
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">kalung</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
                 </div>
 
-                <!-- Cincin Category -->
-                <div class="product-card" data-category="cincin" data-aos="fade-up" data-aos-delay="300"
-                    onclick="window.location.href='category.html?category=cincin'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/cincin/1.jpeg" alt="Koleksi Cincin Monel Custom Trisna Monel"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Cincin</span>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Koleksi Cincin</h3>
-                        <p class="product-description">Cincin eksklusif dengan desain modern dan klasik.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Gelang Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300"
+                    onclick="window.location.href='category.html?category=gelang'">
+                    <img src="images/gelang/1.jpeg" alt="Koleksi Gelang Monel Anti Karat Trisna Monel">
 
-                <!-- Souvenir/Gift Category -->
-                <div class="product-card" data-category="souvenir" data-aos="fade-up" data-aos-delay="400"
-                    onclick="window.location.href='category.html?category=souvenir'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/gift/1.jpeg" alt="Koleksi Souvenir & Gift Monel Logam Premium"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Souvenir</span>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Souvenir & Gift</h3>
-                        <p class="product-description">Souvenir istimewa untuk event dan kenang-kenangan.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">gelang tangan</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
                 </div>
 
                 <!-- Bros Category -->
-                <div class="product-card" data-category="bros" data-aos="fade-up" data-aos-delay="500"
-                    onclick="window.location.href='category.html?category=bros'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/bros/1.jpeg" alt="Koleksi Bros Hijab Logam Premium Trisna Monel"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Bros Hijab</span>
-                        </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400"
+                    onclick="window.location.href='category.html?category=bros'">
+                    <img src="images/bros/1.jpeg" alt="Koleksi Bros Hijab Logam Premium Trisna Monel">
+
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">bros hijab</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Koleksi Bros</h3>
-                        <p class="product-description">Bros cantik untuk aksesoris hijab dan busana Anda.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
+                </div>
+
+                <!-- Souvenir Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="500"
+                    onclick="window.location.href='category.html?category=souvenir'">
+                    <img src="images/gift/1.jpeg" alt="Koleksi Souvenir & Gift Monel Logam Premium">
+
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">souvenir & gift</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
                 </div>
 
                 <!-- Label Brand Category -->
-                <!-- Label Brand Category -->
-                <div class="product-card" data-category="label" data-aos="fade-up" data-aos-delay="600"
-                    onclick="window.location.href='category.html?category=label'" style="cursor: pointer;">
-                    <div class="product-image">
-                        <div class="product-badge">Kategori</div>
-                        <img src="images/label_brand/9.jpeg" alt="Jasa Pembuatan Label Brand Logam Custom Metal Tag"
-                            class="about-img">
-                        <div class="product-overlay">
-                            <span class="view-details">Lihat Semua Label Brand</span>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Label Brand</h3>
-                        <p class="product-description">Label custom untuk branding produk Anda.</p>
-                        <div class="product-features">
-                            <span class="cta-button secondary full-width">Lihat Kategori</span>
-                        </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="600"
+                    onclick="window.location.href='category.html?category=label'">
+                    <img src="images/label_brand/9.jpeg" alt="Jasa Pembuatan Label Brand Logam Custom Metal Tag">
+
+                    <div class="category-card-overlay">
+                        <h3 class="category-card-title">label brand</h3>
+                        <div class="category-card-link">Lihat Semua Galeri <span>&rarr;</span></div>
                     </div>
                 </div>
             </div>
@@ -478,7 +443,7 @@
     <section id="partnership" class="partnership">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Partnership</span>
+                <span class="section-subtitle">Program Kemitraan</span>
                 <h2 class="section-title">Bergabung dengan <span class="gradient-text">Mitra Kami</span></h2>
                 <p class="section-description">
                     Kami menawarkan berbagai program kemitraan yang menguntungkan untuk
@@ -490,11 +455,12 @@
                     <!-- Reseller -->
                     <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <path d="M8 16L24 8L40 16V32L24 40L8 32V16Z" stroke="url(#benefit-gradient-1)"
-                                    stroke-width="2" stroke-linejoin="round" />
-                                <path d="M24 8V24M24 24L40 16M24 24L8 16" stroke="url(#benefit-gradient-1)"
-                                    stroke-width="2" stroke-linecap="round" />
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                stroke="url(#benefit-gradient-1)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                                <path d="M3 6h18" />
+                                <path d="M16 10a4 4 0 0 1-8 0" />
                                 <defs>
                                     <linearGradient id="benefit-gradient-1" x1="8" y1="8" x2="40" y2="40">
                                         <stop offset="0%" stop-color="#D4AF37" />
@@ -511,15 +477,13 @@
                     <!-- Grosir -->
                     <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <rect x="6" y="14" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
-                                    stroke-width="2" />
-                                <rect x="28" y="14" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
-                                    stroke-width="2" />
-                                <rect x="6" y="32" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
-                                    stroke-width="2" />
-                                <rect x="28" y="32" width="14" height="14" rx="2" stroke="url(#benefit-gradient-2)"
-                                    stroke-width="2" />
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                stroke="url(#benefit-gradient-2)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                                <path d="m3.3 7 8.7 5 8.7-5" />
+                                <path d="M12 22V12" />
                                 <defs>
                                     <linearGradient id="benefit-gradient-2" x1="6" y1="14" x2="42" y2="46">
                                         <stop offset="0%" stop-color="#F4C2C2" />
@@ -536,14 +500,12 @@
                     <!-- Vendor/Manufacturer Brand -->
                     <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="benefit-icon">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                <rect x="6" y="20" width="36" height="20" rx="2" stroke="url(#benefit-gradient-3)"
-                                    stroke-width="2" />
-                                <path d="M6 20L24 8L42 20" stroke="url(#benefit-gradient-3)" stroke-width="2"
-                                    stroke-linejoin="round" />
-                                <rect x="14" y="28" width="6" height="12" fill="url(#benefit-gradient-3)" />
-                                <rect x="28" y="28" width="6" height="12" fill="url(#benefit-gradient-3)" />
-                                <rect x="18" y="14" width="12" height="6" fill="url(#benefit-gradient-3)" />
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                stroke="url(#benefit-gradient-3)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 3h12l4 6-10 12L2 9Z" />
+                                <path d="M11 3 8 9l4 12 4-12-3-6" />
+                                <path d="M2 9h20" />
                                 <defs>
                                     <linearGradient id="benefit-gradient-3" x1="6" y1="8" x2="42" y2="40">
                                         <stop offset="0%" stop-color="#C6A87C" />
@@ -713,7 +675,7 @@
                         </div>
                         <div style="text-align: center;">
                             <button type="submit" class="cta-button primary"
-                                style="width: auto; padding: 12px 40px; display: inline-flex; justify-content: center;">
+                                style="width: auto; padding: 12px 30px; display: inline-flex; justify-content: center; border-radius: 50px;">
                                 <span>Kirim Pesan</span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor"
@@ -735,7 +697,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3
-                        style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #C6A87C 0%, #F0E6D2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; letter-spacing: 1px;">
+                        style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem; letter-spacing: 1px;">
                         Trisna Monel
                     </h3>
                     <p>Aksesoris wanita & pria premium dengan desain elegan dan kualitas terbaik untuk mitra bisnis
@@ -789,9 +751,9 @@
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Perusahaan</h4>
-                        <a href="#about">Tentang Kami</a>
+                        <a href="#about">Tentang Perusahaan</a>
                         <a href="#products">Produk</a>
-                        <a href="#partnership">Partnership</a>
+                        <a href="#partnership">Peluang Mitra</a>
                         <a href="#contact">Kontak</a>
                     </div>
                     <div class="footer-column">

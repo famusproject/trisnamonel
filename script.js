@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 20) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
@@ -17,21 +17,48 @@ document.addEventListener('DOMContentLoaded', function () {
         updateActiveNavLink();
     });
 
-    // Mobile menu toggle
+    // Mobile menu toggle logic with overlay and blur
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navLinksContainer = document.getElementById('navLinks');
 
-    mobileMenuToggle.addEventListener('click', function () {
-        navLinksContainer.classList.toggle('active');
-        this.classList.toggle('active');
-    });
+    // Create overlay element if it doesn't exist
+    let overlay = document.querySelector('.nav-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'nav-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    // Create Close Button (X) inside menu if it doesn't exist
+    let closeBtn = navLinksContainer.querySelector('.menu-close-btn');
+    if (!closeBtn) {
+        closeBtn = document.createElement('button');
+        closeBtn.className = 'menu-close-btn';
+        closeBtn.innerHTML = '&times;';
+        navLinksContainer.prepend(closeBtn);
+    }
+
+    function toggleMenu() {
+        const isActive = navLinksContainer.classList.toggle('active');
+        mobileMenuToggle.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = isActive ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        navLinksContainer.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+    closeBtn.addEventListener('click', closeMenu);
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            navLinksContainer.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-        });
+        link.addEventListener('click', closeMenu);
     });
 
     // Smooth scroll for anchor links
@@ -291,23 +318,7 @@ document.head.appendChild(style);
 // ===========================
 // Product Card Interactions removed - using direct links now
 
-// ===========================
-// Parallax Effect for Hero
-// ===========================
-document.addEventListener('DOMContentLoaded', function () {
-    const heroSection = document.querySelector('.hero');
 
-    if (heroSection) {
-        window.addEventListener('scroll', function () {
-            const scrollPosition = window.scrollY;
-            const heroBackground = document.querySelector('.hero-background');
-
-            if (heroBackground && scrollPosition < window.innerHeight) {
-                heroBackground.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-            }
-        });
-    }
-});
 
 // ===========================
 // Floating Cards Animation Enhancement
@@ -430,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Enlarge cursor on interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, .product-card');
+        const interactiveElements = document.querySelectorAll('a, button, .product-card, .category-card');
         interactiveElements.forEach(el => {
             el.addEventListener('mouseenter', () => {
                 cursor.style.transform = 'scale(1.5)';
@@ -446,25 +457,83 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ===========================
-// Performance Optimization
+// Hero Product Slider Logic
 // ===========================
-// Debounce function for scroll events
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
+class HeroSlider {
+    constructor() {
+        this.slides = document.querySelectorAll('.hero-slide');
+        this.dots = document.querySelectorAll('.dot');
+        this.currentSlide = 0;
+        this.slideInterval = null;
+        this.intervalTime = 2500;
+
+        if (this.slides.length > 0) {
+            this.init();
+        }
+    }
+
+    init() {
+        // Start automatic sliding
+        this.startSlideShow();
+
+        // Add click events to dots
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                this.goToSlide(index);
+                this.resetSlideShow();
+            });
+        });
+
+        // Pause on hover
+        const container = document.querySelector('.hero-slider-container');
+        if (container) {
+            container.addEventListener('mouseenter', () => this.stopSlideShow());
+            container.addEventListener('mouseleave', () => this.startSlideShow());
+        }
+    }
+
+    goToSlide(index) {
+        this.slides[this.currentSlide].classList.remove('active');
+        this.slides[this.currentSlide].classList.add('prev'); // Add prev for exit animation
+        const oldSlide = this.currentSlide;
+
+        this.dots[this.currentSlide].classList.remove('active');
+        this.currentSlide = index;
+        this.slides[this.currentSlide].classList.add('active');
+        this.slides[this.currentSlide].classList.remove('prev'); // Ensure active slide isn't marked as prev
+        this.dots[this.currentSlide].classList.add('active');
+
+        // Remove 'prev' class from the old slide after transition finishes
+        setTimeout(() => {
+            this.slides[oldSlide].classList.remove('prev');
+        }, 800);
+    }
+
+    nextSlide() {
+        let next = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(next);
+    }
+
+    startSlideShow() {
+        if (this.slideInterval) return;
+        this.slideInterval = setInterval(() => this.nextSlide(), this.intervalTime);
+    }
+
+    stopSlideShow() {
+        clearInterval(this.slideInterval);
+        this.slideInterval = null;
+    }
+
+    resetSlideShow() {
+        this.stopSlideShow();
+        this.startSlideShow();
+    }
 }
 
-// Apply debounce to scroll-heavy functions
-window.addEventListener('scroll', debounce(function () {
-    // Scroll-dependent functions here
-}, 10));
+// Initialize everything on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    new HeroSlider();
+});
 
 // ===========================
 // WhatsApp CTA Buttons
@@ -1280,7 +1349,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Luxury Scroll Animation
     // ===========================
     setTimeout(() => {
-        const revealSelectors = '.product-card, .section-title, .hero-content, .about-content';
+        const revealSelectors = '.product-card, .category-card, .section-title, .hero-content, .about-content';
         const revealElements = document.querySelectorAll(revealSelectors);
 
         // Add initial class for styling
